@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-İmza Talep Formu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="usak.png" alt="Logo" class="logo">
+        <h2>Uşak Üniversitesi Rektörlüğü - Bilgi İşlem Daire Başkanlığı </h2>
+       
+    </div>
+    <div class="container">
+    
+        <h2>E-İmza Talep Formu</h2>
+        <form id="talepForm">
+            <label for="tc">T.C. Kimlik No:</label>
+            <input type="text" id="tc" name="tc" required>
+        
+            <label for="adSoyad">Adı Soyadı:</label>
+            <input type="text" id="adSoyad" name="adSoyad" required>
+        
+            <label for="dogumTarihi">Doğum Tarihi:</label>
+            <input type="date" id="dogumTarihi" name="dogumTarihi" required>
+        
+            <label for="email">Kurumsal E-Posta:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="birim">Görev Yaptığı Birim:</label>
+            <input type="text" id="birim" name="birim" required>
+        
+            <label for="gorev">Görevi:</label>
+            <input type="text" id="gorev" name="gorev" required>
+        
+            <label for="ogrenim">Öğrenim Durumu:</label>
+            <input type="text" id="ogrenim" name="ogrenim" required>
+        
+            <div class="full-width">
+                <label>Talep Türü:</label>
+                <input type="radio" id="ilkSertifika" name="talepTuru" value="İlk Sertifika" required><br>
+                <label for="ilkSertifika">İlk Sertifika</label>
+        
+                <input type="radio" id="yenileme" name="talepTuru" value="Yenileme"><br>
+                <label for="yenileme">Yenileme</label>
+            </div>
+        
+            <button type="submit">Gönder</button>
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

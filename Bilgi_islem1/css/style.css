@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #404f5f;
+    color: white;
+    padding: 15px;
+    position: fixed; /* Header'ı sayfanın en üstüne sabitle */
+    top: 0;
+    left: 0;
+    
+}
+
+.logo {
+    width: 88px; 
+    height: auto;
+    margin-right: 15px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-top: 100px;
+    padding-right: 40px;
+    margin: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 sütun olacak */
+    gap: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.full-width {
+    grid-column: span 4; /* Tam genişlik kaplayan elemanlar */
+}
+
+button {
+ 
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    
+    border-radius: 5px;
+    grid-column: span 2; /* Buton tam genişlik olacak */
+}
+
+button:hover {
+    background: #0056b3;
+}
