@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - Talepler</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <h2>E-İmza Talepleri</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>T.C Kimlik No</th>
+                    <th>Ad Soyad</th>
+                    <th>Doğum Tarihi</th>
+                    <th>E-Mail</th>
+                    <th>Birim</th>
+                    <th>Görev</th>
+                    <th>Öğrenim Durumu</th>
+                    <th>Talep Türü</th>
+                    <th>Başvuru Tarihi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% talepler.forEach(talep => { %>
+                    <tr>
+                        <td><%= talep.id %></td>
+                        <td><%= talep.tc %></td>
+                        <td><%= talep.adSoyad %></td>
+                        <td><%= talep.dogumTarihi %></td>
+                        <td><%= talep.email %></td>
+                        <td><%= talep.birim %></td>
+                        <td><%= talep.gorev %></td>
+                        <td><%= talep.ogrenim %></td>
+                        <td><%= talep.talepTuru %></td>
+                        <td><%= talep.created_at %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+    <script src="../Javascript/admin.js"></script>
+</body>
+</html>
